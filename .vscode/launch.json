@@ -11,10 +11,10 @@
             "program": "main.py",
             "console": "integratedTerminal",
             "args": [
-                "--plexApiToken=9KJzKo6toUoFMCxPNE5e",
-                "--plexServerUrl=https://10.0.0.18:32400", // 32400 is usually the port for plex servers.
-                "--copy",
-                "--musicLibrary=Audio",
+                "--plexApiToken={plexAPITokenHere}",
+                "--plexServerUrl=https://127.0.0.1:32400", // 32400 is usually the port for plex servers.
+                "--copy", // Comment this out if you don't want to copy the files.
+                "--musicLibrary=Music", // This is the name of your Plex Music Library. It's likely named "Music."
                 "--playlist=4 and 5 Stars"
             ],
             "env": {
