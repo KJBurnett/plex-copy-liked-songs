@@ -64,6 +64,10 @@ def main():
     parser.add_argument("--playlist", help="Name of the playlist to copy songs from")
     args = parser.parse_args()
 
+    # Set hardcoded environmental variables
+    os.environ["SECONDS_TO_WAIT"] = "3600"
+    os.environ["PYTHONWARNINGS"] = "ignore:Unverified HTTPS request"
+
     session = requests.Session()
     session.verify = False
     plexServer = PlexServer(args.plexServerUrl, args.plexApiToken, session)
