@@ -20,6 +20,15 @@ Before running the script, make sure you have completed the following steps:
         - Filter by "Rating" is "greater than or equal to" 4 stars.
     - Save the playlist.
 
+3. **Get Plex API Token**: Obtain a Plex API token, which is required to access the Plex server's API. Follow these steps to get your Plex API token:
+
+    - Open a web browser and go to [https://plex.tv](https://plex.tv).
+    - Log in to your Plex account.
+    - Click on your profile icon in the top right corner and select "Account" from the dropdown menu.
+    - In the left sidebar, click on "Access" under "Settings".
+    - Scroll down to the "Plex API" section and click on "Show".
+    - Copy the displayed API token.
+
 ## Step 1: Install Python
 
 If you don't already have Python installed on your server, follow these steps to install it:
@@ -85,6 +94,4 @@ Once you've installed Python and the required dependencies, you can run the scri
 
 Ensure that you run the script on the server side where your Plex server is hosted. Attempting to run the script on a different machine may result in file path issues.
 
-That's it! You've successfully copied songs from your Plex playlist to a destination folder using the script.
-
-Replace YOUR_PLEX_API_TOKEN, YOUR_PLEX_SERVER_URL, YOUR_MUSIC_LIBRARY_NAME, and YOUR_PLAYLIST_NAME with your actual values. Let me know if you need further assistance!
+That's it! You've successfully copied songs from your Plex playlist to a destination folder using the script. The folder should be in the same path as the script that was ran.
